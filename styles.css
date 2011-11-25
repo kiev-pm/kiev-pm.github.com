@@ -1,0 +1,38 @@
+body {
+    background: #fff;
+    font: 18px/25px Palatino,"Palatino Linotype",serif;
+    line-height:25px
+}
+
+.header {
+    text-align:right;
+    border-bottom:1px solid #ccc;
+    margin-bottom:1em;
+}
+
+#logo {
+    padding-top:1em;
+}
+
+h1#logo, h2#motto {
+    padding-bottom:0px;
+    margin-bottom:0px;
+}
+
+#motto {
+    font-style:italic;
+    padding-bottom:1em;
+    color:#ccc;
+}
+
+a img, a:hover img { border:0px }
+
+.buttons a, .buttons a:visited {
+    text-decoration:none;
+}
+
+p {
+    font-size:18px;
+    margin-top:0.5em;
+    margin-bottom:1em;
+}
