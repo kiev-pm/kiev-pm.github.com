@@ -27,6 +27,10 @@ h1#logo, h2#motto {
 
 a img, a:hover img { border:0px }
 
+.buttons {
+    margin-bottom:1em;
+}
+
 .buttons a, .buttons a:visited {
     text-decoration:none;
 }

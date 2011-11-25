@@ -4,8 +4,16 @@
         <title>Kiev.pm</title>
         <link rel="stylesheet" href="bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="styles.css" type="text/css" />
+        <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     </head>
     <body>
+        <script>
+            var images = ['kiev.jpg', 'kiev-2.jpg', 'kiev-3.jpg', 'kiev-4.jpg'];
+            $(document).ready(function() {
+                var image = images[Math.floor(Math.random() * images.length)];
+                $('#image').attr('src', image);
+            });
+        </script>
         <div class="container">
             <div class="row">
                 <div class="span16">
@@ -20,7 +28,7 @@
                 <div class="span4">
                     <div class="media-grid">
                         <a href="http://en.wikipedia.org/wiki/Kiev">
-                            <img class="thumbnail" src="kiev.jpg" title="Article about Kiev on Wikipedia" />
+                            <img id="image" class="thumbnail" src="kiev.jpg" title="Article about Kiev on Wikipedia" />
                             Kiev, Ukraine
                         </a>
                     </div>
@@ -47,14 +55,7 @@
                             <img src="github.png" title="GitHub" />
                         </a>
                     </div>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="span4">
-                    &nbsp;
-                </div>
-                <div class="span12">
                     <h2>Meetings</h2>
                     <p>
                         We meet every last Thursday of the month.
@@ -68,6 +69,7 @@
                     </p>
                 </div>
             </div>
+
         </div>
     </body>
 </html>
