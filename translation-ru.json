@@ -1,0 +1,22 @@
+{
+    "motto": "Локальная группа Perl Mongers",
+    "media": {
+        "kiev": {
+            "img": {
+                "title": "Статья о Киеве на Wikipedia"
+            },
+            "city": "Киев, Украина"
+        }
+    },
+    "buttons": {
+        "mail-list": {"title": "Список рассылки"},
+        "google-calendar": {"title": "Календарь Google"}
+    },
+    "meetings": {
+        "head": "Встречи",
+        "text": "Мы встречаемся каждый последний четверг месяца"
+    },
+    "workshops": {
+        "head": "Воркшопы"
+    }
+}

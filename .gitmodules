@@ -1,0 +1,3 @@
+[submodule "jquery-localize"]
+	path = jquery-localize
+	url = https://und3f@github.com/und3f/jquery-localize.git

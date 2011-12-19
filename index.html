@@ -4,7 +4,16 @@
         <title>Kiev.pm</title>
         <link rel="stylesheet" href="bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="styles.css" type="text/css" />
-        <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+        <script type="text/javascript"
+          src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script type="text/javascript" src="jquery-localize/build/jquery.localize.js">
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("[rel*=localize]").localize("translation")
+            });
+        </script>
     </head>
     <body>
         <div class="container">
@@ -12,7 +21,7 @@
                 <div class="span16">
                     <div class="header">
                         <h1 id="logo">Kiev.PM</h1>
-                        <h2 id="motto">Perl Mongers local group</h2>
+                        <h2 id="motto" rel="localize[motto]">Perl Mongers local group</h2>
                     </div>
                 </div>
             </div>
@@ -21,15 +30,18 @@
                 <div class="span4">
                     <div class="media-grid">
                         <a href="http://en.wikipedia.org/wiki/Kiev" target="_blank">
-                            <img id="image" class="thumbnail" src="kiev.jpg" title="Article about Kiev on Wikipedia" />
-                            Kiev, Ukraine
+                            <img id="image" class="thumbnail" src="kiev.jpg"
+                                title="Article about Kiev on Wikipedia"
+                                rel="localize[media.kiev.img]" />
+                            <div rel="localize[media.kiev.city]">Kiev, Ukraine</div>
                         </a>
                     </div>
                 </div>
                 <div class="span12">
                     <div class="buttons">
                         <a href="http://mail.pm.org/mailman/listinfo/kiev-pm/" target="_blank">
-                            <img src="mailman.png" title="Mail list" />
+                            <img src="mailman.png" title="Mail list"
+                                rel="localize[buttons.mail-list]" />
                         </a>
                         <br />
                         <a href="http://www.facebook.com/groups/200467680011987/" target="_blank">
@@ -42,19 +54,20 @@
                             <img src="github.png" title="GitHub" />
                         </a>
                         <a href="http://www.google.com/calendar/embed?src=a2lldi5wbS5vcmdfdHNtOWxnaDAydW1hdTBlOGViYjBmNDlhcmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" target="_blank">
-                            <img src="googlecal.png" title="Google Calendar" />
+                            <img src="googlecal.png" title="Google Calendar"
+                                rel="localize[buttons.google-calendar]" />
                         </a>
                     </div>
 
-                    <h2>Meetings</h2>
-                    <p>
+                    <h2 rel="localize[meetings.head]">Meetings</h2>
+                    <p rel="localize[meetings.text]">
                         We meet every last Thursday of the month.
                     </p>
 
-                    <h2>Workshops</h2>
+                    <h2 rel="localize[workshops.head]">Workshops</h2>
                     <p>
                         <a href="http://black-perl.org" target="_blank">
-                            <img src="black-perl-banner.png" title="Black Perl"/>
+                            <img src="black-perl-banner.png" title="Black Perl" />
                         </a>
                     </p>
                 </div>
