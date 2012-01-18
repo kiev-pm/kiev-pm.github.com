@@ -27,16 +27,21 @@ h1#logo, h2#motto {
 
 a img, a:hover img { border:0px }
 
-.buttons {
-    margin-bottom:1em;
-}
-
-.buttons a, .buttons a:visited {
-    text-decoration:none;
-}
-
 p {
     font-size:18px;
     margin-top:0.5em;
     margin-bottom:1em;
+}
+
+#resources-pane li {
+ display: list-item;
+}
+
+#resources-pane li img {
+ float: left;
+}
+
+#resources-pane li a {
+ border: none;
+ color: #464646;
 }
