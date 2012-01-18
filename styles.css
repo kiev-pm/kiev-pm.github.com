@@ -36,10 +36,10 @@ p {
 #resources-pane li {
  display: list-item;
  list-style: none;
+ overflow: hidden;
 }
 
 #resources-pane li img {
- float: left;
  display: inline;
  vertical-align: bottom;
 }
