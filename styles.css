@@ -49,7 +49,7 @@ p {
  color: #464646;
 }
 
-#resources-pane li > span {
+#resources-pane li span {
  margin-bottom: 15px;
  display: inline-block;
 }
