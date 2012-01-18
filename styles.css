@@ -33,6 +33,10 @@ p {
     margin-bottom:1em;
 }
 
+#resources-pane ul {
+ margin-left: 0;
+}
+
 #resources-pane li {
  display: list-item;
  list-style: none;
