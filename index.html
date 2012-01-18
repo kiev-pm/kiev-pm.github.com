@@ -1,65 +1,7 @@
-<!doctype html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Kiev.pm</title>
-        <link rel="stylesheet" href="bootstrap.min.css" type="text/css" />
-        <link rel="stylesheet" href="styles.css" type="text/css" />
-        <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
-        <script type="text/javascript" src="nextevent.js"></script>
-        <script>
-            $(document).ready(function() {
-                var nextEvent = new NextEvent();
-
-                var message = '';
-                if (nextEvent.isToday()) {
-                    message = 'сегодня!, ';
-                }
-                else if (nextEvent.isThisWeek()) {
-                    message = 'на этой неделе, ';
-                }
-
-                var date = nextEvent.getNextDate();
-                var months = [
-                    'января',
-                    'февраля',
-                    'марта',
-                    'апреля',
-                    'мая',
-                    'июня',
-                    'июля',
-                    'августа',
-                    'сентября',
-                    'октября',
-                    'ноября',
-                    'декабря'
-                ];
-                message += date.getDate() + ' ' + months[date.getMonth()];
-
-                $('#next_event').html('(след. встреча <b>' + message + '</b>)');
-            });
-        </script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="span16">
-                    <div class="header">
-                        <h1 id="logo">Kiev.PM</h1>
-                        <h2 id="motto">Perl Mongers local group</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="span4">
-                    <div class="media-grid">
-                        <a href="http://en.wikipedia.org/wiki/Kiev" target="_blank">
-                            <img id="image" class="thumbnail" src="kiev.jpg" title="Article about Kiev on Wikipedia" />
-                            Kiev, Ukraine
-                        </a>
-                    </div>
-                </div>
-                <div class="span12">
+--
+layout: default
+title: 
+--
                     <p><b>Kiev Perl Mongers</b> или <b>Kiev.pm</b>&nbsp;&mdash; всеукраинское сообщество Perl-программистов и пользователей <a href='http://perl.org' target='_blank'>Perl</a>. Наша цель - создание комфортной среды для профессионального общения заинтересованных людей и организаций.</p>
 
                     <p>Kiev.pm участник всемирной ассоциации <a href='http://www.pm.org/' target="_blank">Perl Mongers</a>&nbsp;&mdash; а это более двухсот аналогичных сообществ по всему миру. Мы поддерживаем отношения с другими PM-группами и работаем над тем, чтобы друзей становилось больше. Быть открытыми для обмена опытом&nbsp;&mdash; это важно для нас.</p>
@@ -102,9 +44,3 @@
                             <span style='font-size: 270%; color: black;'>PerlMova</span>
                         </a>
                     </p>
-                </div>
-            </div>
-
-        </div>
-    </body>
-</html>
