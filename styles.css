@@ -35,13 +35,21 @@ p {
 
 #resources-pane li {
  display: list-item;
+ list-style: none;
 }
 
 #resources-pane li img {
  float: left;
+ display: inline;
+ vertical-align: bottom;
 }
 
 #resources-pane li a {
  border: none;
  color: #464646;
+}
+
+#resources-pane li > span {
+ margin-bottom: 15px;
+ display: inline-block;
 }
