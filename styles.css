@@ -62,3 +62,12 @@ p {
 #resources-pane li span:hover {
  text-decoration: underline;
 }
+
+footer {
+ text-align: center;
+ margin-bottom: 2em;
+}
+
+footer p.support {
+ font-size: 0.8em;
+}
