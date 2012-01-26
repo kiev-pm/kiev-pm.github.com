@@ -22,6 +22,7 @@ function NextEvent(options) {
 
     self.getNextDate = function() {
         var now = new Date();
+        now.setHours(0, 0, 0, 0);
 
         var currentMonth = now.getMonth();
         var currentYear = now.getYear() + 1900;
@@ -29,7 +30,7 @@ function NextEvent(options) {
         var dayOfWeek = 4;
 
         var lastThursday = lastDayOfWeekInMonth(dayOfWeek, currentMonth, currentYear);
-        if (lastThursday < new Date()) {
+        if (lastThursday < now) {
             lastThursday = lastDayOfWeekInMonth(dayOfWeek, currentMonth + 1, currentYear);
         }
 
@@ -37,7 +38,9 @@ function NextEvent(options) {
     };
 
     self.isToday = function() {
-        return new Date() == self.getNextDate();
+        var now = new Date();
+        now.setHours(0, 0, 0, 0);
+        return now - self.getNextDate() == 0;
     };
 
     self.isThisWeek = function() {
