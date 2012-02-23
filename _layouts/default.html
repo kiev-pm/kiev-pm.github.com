@@ -1,7 +1,11 @@
 <!doctype html>
     <head>
         <meta charset="UTF-8">
-        <title>Kiev Perl Mongers - {{ title }}</title>
+        <title>Kiev Perl Mongers
+          {% if page.title %}
+            - {{ page.title }}
+          {% endif %}
+        </title>
         <link rel="stylesheet" href="bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="styles.css" type="text/css" />
         <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
