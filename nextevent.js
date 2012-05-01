@@ -50,9 +50,12 @@ function NextEvent(options) {
     self.isThisWeek = function() {
         var now = self._getNow();
         var dayOfWeek = now.getDay();
+        if (dayOfWeek == 0)
+            dayOfWeek = 7;
+        var msInDay = 24 * 60 * 60 * 1000;
 
-        var startOfWeek = new Date(now.getYear() + 1900, now.getMonth(), now.getDate() - dayOfWeek + 1);
-        var endOfWeek = new Date(now.getYear() + 1900, now.getMonth(), startOfWeek.getDate() + 6);
+        var startOfWeek = new Date(now.getTime() - (dayOfWeek - 1) * msInDay);
+        var endOfWeek = new Date(startOfWeek.getTime() + 7 * msInDay - 1);
 
         var date = self.getNextDate();
         return date >= startOfWeek && date <= endOfWeek;
