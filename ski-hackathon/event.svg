@@ -36,9 +36,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="155.04835"
-     inkscape:cy="971.93463"
+     inkscape:zoom="1.4"
+     inkscape:cx="272.09599"
+     inkscape:cy="840.72175"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -274,15 +274,18 @@
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:times;-inkscape-font-specification:times"
-       x="187.14285"
-       y="289.50504"
+       x="171.14285"
+       y="285.50504"
        id="text4501"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/vti/dev/kiev-pm.github.com/ski-hackathon/event.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
          sodipodi:role="line"
          id="tspan4503"
-         x="187.14285"
-         y="289.50504"
-         style="font-family:impact;-inkscape-font-specification:impact">**-**</tspan></text>
+         x="171.14285"
+         y="285.50504"
+         style="font-family:impact;-inkscape-font-specification:impact">16-20</tspan></text>
     <rect
        style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect4466-1"
