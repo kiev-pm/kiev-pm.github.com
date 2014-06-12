@@ -65,7 +65,7 @@ href="https://metacpan.org/author/MLEHMANN">Marc Lehmann</a>)</b>, автор т
 Интервью в журнале <a href="http://pragmaticperl.com">Pragmatic&nbsp;Perl</a> <a href="http://pragmaticperl.com/issues/09/pragmaticperl-09-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B2%D1%8C%D1%8E-%D1%81-marc-lehmann.-%D1%87%D0%B0%D1%81%D1%82%D1%8C-1.html">Часть&nbsp;1</a>, <a href="http://pragmaticperl.com/issues/10/pragmaticperl-10-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B2%D1%8C%D1%8E-%D1%81-marc-lehmann.-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2.html">Часть&nbsp;2</a>.
 </p>
 
-<div id="mapdiv" style="width:400px;height:300px;float:left"></div>
+<!--<div id="mapdiv" style="width:400px;height:300px;float:left"></div>-->
 
 <div style="clear:both"></div>
 
@@ -129,23 +129,23 @@ href="https://metacpan.org/author/MLEHMANN">Marc Lehmann</a>)</b>, автор т
 <a href="http://kiev.pm.org">Kiev.pm</a>, <a href="http://pragmaticperl.com">Pragmatic Perl</a>
 </p>
 
-<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
-<script>
-    map = new OpenLayers.Map("mapdiv");
-    map.addLayer(new OpenLayers.Layer.OSM());
+<!--<script src="http://www.openlayers.org/api/OpenLayers.js"></script>-->
+<!--<script>-->
+    <!--map = new OpenLayers.Map("mapdiv");-->
+    <!--map.addLayer(new OpenLayers.Layer.OSM());-->
 
-    var lonLat = new OpenLayers.LonLat(30.522778, 50.450278)
-        .transform(
-                new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
-                map.getProjectionObject() // to Spherical Mercator Projection
-                );
+    <!--var lonLat = new OpenLayers.LonLat(30.522778, 50.450278)-->
+        <!--.transform(-->
+                <!--new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984-->
+                <!--map.getProjectionObject() // to Spherical Mercator Projection-->
+                <!--);-->
 
-        var zoom=16;
+        <!--var zoom=16;-->
 
-        var markers = new OpenLayers.Layer.Markers( "Markers" );
-        map.addLayer(markers);
+        <!--var markers = new OpenLayers.Layer.Markers( "Markers" );-->
+        <!--map.addLayer(markers);-->
 
-        markers.addMarker(new OpenLayers.Marker(lonLat));
+        <!--markers.addMarker(new OpenLayers.Marker(lonLat));-->
 
-        map.setCenter (lonLat, zoom);
-</script>
+        <!--map.setCenter (lonLat, zoom);-->
+<!--</script>-->
